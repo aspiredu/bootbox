@@ -9,6 +9,19 @@
 * If you've added new functionality, **please** include tests which validate its behaviour -- **this includes pull requests which _only_ add new locales!**
 * After you've made changes to `bootbox.js` you must run `grunt` to rebuild the files in `dist/` before you commit changes and submit the PR.
 
+## Releasing Code
+
+* Bump version number across the following files
+* * bootbox.js
+* * header.txt
+* * templates/umd-header-locales.txt
+* * templates/umd-header.txt
+* * package.json
+* Update [README.md](/README.md) and [CHANGELOG.md](/CHANGELOG.md)
+* Run `grunt` to build final files in `/dist`
+* Run `npm install` to rebuild `package-lock.json`
+* Create a tag and a [new release](https://github.com/aspiredu/bootbox/releases) on Github
+
 ## Submitting bug reports
 
 * Where at all possible, please try and provide a link to a jsfiddle.net example or similar
